@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="mystyle.css"/>
+
+
+
+	<head>
+		<title>Andrew Stuempfig</title>
+		<meta charset = "utf-8"/>
+		<meta name = "viewport" content = width = device-width, initial-scale=1"/>
+	</head>
+	
+	
+	<body>
+	
+	
+		<h1 class="header">Andrew Stuempfig</h1>
+		<div class="header">
+			<a id="resume" href="C:\Users\Andrew\Desktop\CISC375\myresume.html">Resume</a>
+			<a class="active" id="projects" href="C:\Users\Andrew\Desktop\CISC375\myprojects.html">Projects</a>
+			<a id="home" href="C:\Users\Andrew\Desktop\CISC375\mywebsite.html">Home</a>
+		</div>
+	
+		<br>
+		<br>
+		<br>
+		
+		
+		
+		<ul id="projectlist">
+			<li class="pList">
+				<p>Econometrics: Factors Contributing to Olympic Medal Totals</p>
+				<img class="projectContent" src="C:\Users\Andrew\Desktop\CISC375\olympics.jpg" height="200" width="auto" onclick="lightbox();currentslide(1)" class="hover-shadow">
+			</li>
+			<li class="pList">
+				<p>Forecasting: Minnesota Housing Prices</p>
+				<img class="projectContent" src="C:\Users\Andrew\Desktop\CISC375\housing.jpg" height="200" width="auto" onclick="lightbox();currentslide(2)" class="hover-shadow">
+			</li>
+			<li class="pList">
+				<p>Information Security: Security Analysis</p>
+				<img class="projectContent" src="C:\Users\Andrew\Desktop\CISC375\infosec.jpg" height="200" width="auto" onclick="lightbox();currentslide(3)" class="hover-shadow">
+			</li>
+			<li class="pList">
+				<p>Macroeconomic Theory: Venezuela Crisis</p>
+				<img class="projectContent" src="C:\Users\Andrew\Desktop\CISC375\venezuela.jpg" height="200" width="auto" onclick="lightbox();currentslide(4)" class="hover-shadow">
+			</li>
+		</ul>
+		
+		
+		
+		
+		<div id="lightbox">
+			<span class="close cursor" onclick="closeLightbox()">&times;</span>
+			<div class="lightboxContent">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="C:\Users\Andrew\Desktop\CISC375\olympics.jpg" width="50%" height="auto">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="C:\Users\Andrew\Desktop\CISC375\housing.jpg" width="50%" height="auto">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="C:\Users\Andrew\Desktop\CISC375\infosec.jpg" width="50%" height="auto">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="C:\Users\Andrew\Desktop\CISC375\venezuela.jpg" width="50%" height="auto">
+			</div>
+
+
+	
+	
+	
+	
+		<script type="text/javascript">
+	
+	
+			function lightbox(){
+				document.getElementById("lightbox").style.display = "block";
+			}
+			
+			function closeLightbox(){
+				document.getElementById("lightbox").style.display = "none";
+			
+			}
+	
+	
+			function currentslide(x){
+				showSlide(index = x);
+			}
+	
+	
+			function showSlide(x){
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				if (x > slides.length){
+					index = 1;
+				}
+				if (x < 1){
+					index = slides.length;
+				}
+				for (i=0; i<slides.length; i++){
+					slides[i].style.display = "none";
+				
+				}
+				slides[index-1].style.display = "block";
+				
+			
+			}
+	
+	
+	
+	
+	
+	
+	
+		</script>
+	
+	
+	</body>
+
+
+
+</html>

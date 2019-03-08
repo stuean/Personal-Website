@@ -1,0 +1,192 @@
+*{
+	margin:0 auto;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	font-family: Aharoni;
+}
+
+
+body{
+	background-color: rgba(90,3,3,0.9);
+	width: 80%;
+	text-align: center;
+}
+
+.header{
+	position: fixed; 
+	font: normal bold 2rem Aharoni;
+	width: 80%;
+	background-color: rgba(90,3,3,1);
+	border-style: groove;
+	border-color: black;
+	border-radius: 4px;
+	color: white;
+}
+
+a:link, a:visited{
+	color: white;
+	padding: 8px 12px;
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+
+a:hover{
+	background-color: rgba(40,18,18,1);
+	transition: 1.2s;
+}
+
+.active{
+	background-color: rgba(175,70,70,.9);
+}
+
+#name{
+	float: left;
+	color: white;
+}
+
+#home{
+	border-left-style: groove;
+	border-left-color: black;
+}
+
+#projects{
+	border-right-style: groove;
+	border-right-color: black;
+	border-left-style: groove;
+	border-left-color: black;
+}
+
+p{
+	color: white;
+	font-family: Aharoni;
+	padding: 4px;
+	font-size: 150%;
+
+}
+
+#para1{
+	float: right;
+	width: 70%;
+	margin-top: 5.5rem;
+	padding: 4px;
+	border-style: groove;
+	border-color: black;
+	border-radius: 4px;
+}
+
+#pic{
+	width: 250px;
+	height: auto;
+	padding: 4px;
+	border-style: groove;
+	border-color: black;
+	border-radius: 4px;
+	float: left;
+	margin-top: 5.5rem;
+}
+
+
+
+
+
+.pList{
+	border-style: groove;
+	border-color: black;
+	border-radius: 4px;
+	padding: 2px;
+	margin: 5px;
+	list-style-type: none;
+}
+
+
+.projectContent:hover{
+	cursor: pointer;
+	
+}
+
+#projectlist{
+	margin-top: 2rem;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+img.hover-shadow {
+  transition: 0.5s;
+}
+
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+h2{
+	
+}
+
+.resumeTopic{
+	border-style: groove;
+	border-color: black;
+	border-radius: 4px;
+	color: white;
+	margin: 5px;
+}
+
+.resumeItem{
+	font: normal bold 1.5rem Aharoni;
+}
+
+.resumeH{
+	font: normal bold 3rem Aharoni;
+}
+
+#Education{
+	margin-top: 5rem;
+}
+

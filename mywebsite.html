@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="mystyle.css"/>
+
+
+
+	<head>
+		<title>Andrew Stuempfig</title>
+		<meta charset = "utf-8"/>
+		<meta name = "viewport" width=device-width, initial-scale=1"/>
+	</head>
+	
+	
+	<body onload="popList()">
+	
+		<h1 class="header" id="name">Andrew Stuempfig</h1>
+		<div class="header">
+			<a id="resume" href="C:\Users\Andrew\Desktop\CISC375\myresume.html">Resume</a>
+			<a id="projects" href="C:\Users\Andrew\Desktop\CISC375\myprojects.html">Projects</a>
+			<a class="active" id="home" href="C:\Users\Andrew\Desktop\CISC375\mywebsite.html">Home</a>
+		</div>
+		
+		
+		<img class="content" id="pic" src="C:/Users/Andrew/Desktop/CISC375/seniorpic.jpg" height="300" width="auto" id="img1"/>
+		<p class="content" id="para1">Welcome.</p>
+		 
+		
+
+		
+		
+		
+		<script type="text/javascript">
+		
+	
+		
+			var popList = function(){
+				console.log("hi");
+				var url = "C:\Users\Andrew\Desktop\CISC375\news.json";
+				var p = GetJSON(url);
+				p.then(results => {
+					console.log(results);
+					//name = results.name;
+					//homeurl = results.homeworld;
+					
+					var newList = document.createElement("ul");
+					newList.textContent = "Hello";
+					newList.textContent = "There";
+
+						
+
+				});
+			
+			}
+		
+		
+			function GetJSON(url){
+			var p = new Promise((resolve, reject) => {
+				var req = new XMLHttpRequest();
+				req.onreadystatechange = function(){
+					if(req.readyState == 4 && req.status == 200){
+						var data = JSON.parse(req.response);
+						resolve(data);
+					}
+					else if(req.readyState == 4){
+						reject("Error:" + req.status);
+					}
+				};
+				req.open("GET", url, true);
+				req.send();
+			});
+			return p;
+		}
+		
+		
+		
+		
+		/*
+	
+			var p1 = document.getElementById("first");
+			p1.style.color = "white";
+			
+			var p_new = document.createElement("p");
+			p_new.textContent = "NEW PARAGRAPH";
+			var container1 = document.getElementById("first");
+			container1.appendChild(p_new);
+			*/
+		
+		</script>
+		
+	</body>
+
+
+
+
+
+
+</html>
