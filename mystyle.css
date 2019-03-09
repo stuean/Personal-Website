@@ -27,7 +27,7 @@ body{
 	color: white;
 }
 
-#resume, #projects, #home:link, #resume, #projects, #home:visited{
+#resume:link, #resume:visited{
 	color: white;
 	padding: 8px 12px;
 	text-align: center; 
@@ -36,8 +36,35 @@ body{
 	float: right;
 	position: relative;
 }
+#resume:hover{
+	background-color: rgba(40,18,18,1);
+	transition: 1.2s;
+}
 
-#resume, #projects, #home:hover{
+#projects:link, #projects:visited{
+	color: white;
+	padding: 8px 12px;
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+#projects:hover{
+	background-color: rgba(40,18,18,1);
+	transition: 1.2s;
+}
+
+#home:link, #home:visited{
+	color: white;
+	padding: 8px 12px;
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+#home:hover{
 	background-color: rgba(40,18,18,1);
 	transition: 1.2s;
 }
@@ -96,6 +123,14 @@ p{
 
 
 
+
+
+
+
+
+
+
+
 .pList{
 	border-style: groove;
 	border-color: black;
@@ -114,6 +149,19 @@ p{
 #projectlist{
 	margin-top: 2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #lightbox {
   display: none;
@@ -163,13 +211,6 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-
-h2{
-	
-}
-
 .resumeTopic{
 	border-style: groove;
 	border-color: black;
@@ -187,5 +228,5 @@ h2{
 }
 
 .resumeLink{
-	background-color: blue;
+	color: blue;
 }
