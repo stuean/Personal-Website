@@ -27,7 +27,7 @@ body{
 	color: white;
 }
 
-a:link, a:visited{
+#resume, #projects, #home:link, #resume, #projects, #home:visited{
 	color: white;
 	padding: 8px 12px;
 	text-align: center; 
@@ -37,7 +37,7 @@ a:link, a:visited{
 	position: relative;
 }
 
-a:hover{
+#resume, #projects, #home:hover{
 	background-color: rgba(40,18,18,1);
 	transition: 1.2s;
 }
@@ -67,7 +67,7 @@ p{
 	color: white;
 	font-family: Aharoni;
 	padding: 4px;
-	font-size: 200%;
+	font-size: 3rem;
 
 }
 
@@ -179,14 +179,13 @@ h2{
 }
 
 .resumeItem{
-	font: normal bold 1.5rem Aharoni;
+	font: normal normal 1.5rem Aharoni;
 }
 
 .resumeH{
 	font: normal bold 3rem Aharoni;
 }
 
-#Education{
-	margin-top: 5rem;
+.resumeLink{
+	background-color: blue;
 }
-
