@@ -150,7 +150,12 @@ p{
 	margin-top: 2rem;
 }
 
-
+.caption {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
 
 
 
@@ -229,7 +234,7 @@ img.hover-shadow {
 }
 
 .resumeLink{
-	color: blue;
-	text-shadow: 2px 2px blue;
+	color: white;
+	text-shadow: 1px 1px 2px blue;
 	text-decoration: none;
 }
