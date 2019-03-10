@@ -36,22 +36,15 @@
 			var popList = function(){
 				console.log("hi");
 				var url = "https://stuean.gethub.io/Personal-Website/news.json";
-				var p = GetJSON(url);
-				p.then(results => {
-					console.log(results);
+				GetJSON(url);
+				console.log(results);
 					//name = results.name;
-					//homeurl = results.homeworld;
 					
-					var newList = document.createElement("ul");
-						
-
-				});
-			
+				var newList = document.createElement("ul");
 			}
 		
 		
 			function GetJSON(url){
-			var p = new Promise((resolve, reject) => {
 				var req = new XMLHttpRequest();
 				req.onreadystatechange = function(){
 					if(req.readyState == 4 && req.status == 200){
@@ -65,8 +58,7 @@
 				req.open("GET", url, true);
 				req.send();
 			});
-			return p;
-		}
+		
 		
 		
 		
