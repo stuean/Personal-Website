@@ -223,6 +223,10 @@ img.hover-shadow {
 	border-radius: 4px;
 	color: white;
 	text-align: left;
+
+}
+
+#Education{
 	position: absolute;
 	margin-top: 5.5rem;
 }
