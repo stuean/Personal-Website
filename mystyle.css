@@ -76,6 +76,7 @@ body{
 #name{
 	float: left;
 	color: white;
+	position: relative;
 }
 
 #home{
@@ -222,8 +223,8 @@ img.hover-shadow {
 	border-radius: 4px;
 	color: white;
 	text-align: left;
+	position: absolute;
 	margin-top: 5.5rem;
-	position: relative;
 }
 
 .resumeItem{
