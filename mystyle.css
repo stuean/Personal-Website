@@ -157,17 +157,6 @@ p{
   color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 #lightbox {
   display: none;
   position: fixed;
@@ -216,13 +205,25 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .resumeTopic{
 	border-style: groove;
 	border-color: black;
 	border-radius: 4px;
 	color: white;
-	margin: 5px;
 	text-align: left;
+	margin-top: 5.5rem;
+	position: relative;
 }
 
 .resumeItem{
