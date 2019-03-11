@@ -223,6 +223,7 @@ img.hover-shadow {
 	border-radius: 4px;
 	color: white;
 	text-align: left;
+	margin-bottom: 1rem;
 }
 
 .resumeItem{
@@ -240,5 +241,5 @@ img.hover-shadow {
 }
 
 #res{
-	margin-top: 5.5rem;
+
 }

@@ -43,7 +43,9 @@
 					//homeurl = results.homeworld;
 					
 					var newList = document.createElement("ul");
-						
+					var text = document.createTextNode(results);
+					newList.appendChild(text);
+					document.body.appendChild(newList);
 
 				});
 			
