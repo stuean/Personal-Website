@@ -135,11 +135,11 @@ p{
 }
 
 #newsList{
-	font: normal bold 2rem Aharoni;
+	font: normal normal 2rem Aharoni;
 }
 
 #newsHeader{
-	font: normal bold 3rem Aharoni;
+	font: normal bold 2.5rem Aharoni;
 }
 
 
