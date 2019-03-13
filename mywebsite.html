@@ -27,7 +27,7 @@
 		 
 		<ul id="newsList">
 			<li>
-				<p>Hello Friend</p>
+				<p>Recent News</p>
 			</li>
 		</ul>
 		
@@ -47,10 +47,9 @@
 					//homeurl = results.homeworld;
 					
 					var newList = document.createElement("LI");
-					var text = document.createTextNode(results.name);
+					var text = document.createTextNode(results.news);
 					newList.appendChild(text);
 					document.getElementById("newsList").appendChild(newList);
-					console.log("Hellooooo");
 
 				});
 			

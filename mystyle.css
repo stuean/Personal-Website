@@ -123,14 +123,15 @@ p{
 
 #newsList{
 	display: inline-block;
-	
 	float: right;
 	width: 70%;
-	margin-top: 5.5rem;
+	margin-top: 2rem;
 	padding: 4px;
+	color: white; 
 	border-style: groove;
 	border-color: black;
 	border-radius: 4px;
+	text-align: left;
 }
 
 
