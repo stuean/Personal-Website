@@ -1,6 +1,8 @@
-{"news": "Interning at AXA Advisors"},
-{"news": "Researching with Economics professor"},
-{"news": "Finished MGMT 305"},
-{"news": "Finished ECON 351"},
-{"news": "Finished ECON 331"},
-{"news": "Finished HONR 480"}
+{"news": {
+	"Interning at AXA Advisors",
+	"Researching with Economics professor",
+	"Finished MGMT 305",
+	"Finished ECON 351",	
+	"Finished ECON 331",
+	"Finished HONR 480"}
+	}
