@@ -45,10 +45,12 @@
 				p.then(results => {
 					console.log(results);
 					
-					var newList = document.createElement("LI");
-					var text = document.createTextNode(results[0].news);
-					newList.appendChild(text);
-					document.getElementById("newsList").appendChild(newList);
+					for(i=0; i<results.length; i++){
+						var newList = document.createElement("LI");
+						var text = document.createTextNode(results[i].news);
+						newList.appendChild(text);
+						document.getElementById("newsList").appendChild(newList);
+						}
 
 				});
 			
