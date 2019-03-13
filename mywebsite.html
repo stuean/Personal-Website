@@ -25,11 +25,12 @@
 		<img class="content" id="pic" src="https://stuean.github.io/Personal-Website/seniorpic.JPG" height="300" width="auto" id="img1"/>
 		<p class="content" id="para1">Welcome to my website. My name is Andrew Stuempfig, and I am currently a senior at the University of St. Thomas in St. Paul, Minnesota. I am majoring in Business Economics, with a minor in Computer Science. My academic achievements include being on the Dean's List every semester I have been at St. Thomas, winning both the NCAA Elite 90 and MIAC Elite 22 academic awards. I have professional experience working for SRF Consulting Group, Inc. and AXA Advisors. Outside of the classroom, I have played soccer my entire life, including four years on the team at St. Thomas, and I currently produce a soccer podcast.</p>
 		 
-		<ul id="newsList">
-			<li>
-				<p>Recent News</p>
-			</li>
-		</ul>
+		 
+		<div id="news"> 
+			<h3>News</h3>
+			<ul id="newsList">
+			</ul>
+		</div>
 		
 		
 		
@@ -47,7 +48,7 @@
 					//homeurl = results.homeworld;
 					
 					var newList = document.createElement("LI");
-					var text = document.createTextNode(results.news[0]);
+					var text = document.createTextNode(results[0].news);
 					newList.appendChild(text);
 					document.getElementById("newsList").appendChild(newList);
 

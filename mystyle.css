@@ -120,8 +120,7 @@ p{
 	margin-top: 5.5rem;
 }
 
-
-#newsList{
+#news{
 	display: inline-block;
 	float: right;
 	width: 70%;
@@ -132,6 +131,10 @@ p{
 	border-color: black;
 	border-radius: 4px;
 	text-align: left;
+}
+
+#newsList{
+
 }
 
 
