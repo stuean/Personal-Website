@@ -44,8 +44,6 @@
 				var p = GetJSON(url);
 				p.then(results => {
 					console.log(results);
-					//name = results.name;
-					//homeurl = results.homeworld;
 					
 					var newList = document.createElement("LI");
 					var text = document.createTextNode(results[0].news);
