@@ -182,7 +182,6 @@ p{
 
 #lightbox {
   display: none;
-  position: absolute;
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -194,9 +193,11 @@ p{
 }
 
 .projectDes{
-	position: relative;
+	position: absolute;
 	padding: 0;
 	width: 90%;
+	bottom: 2rem;
+	left: 3rem;
 }
 
 .close {
@@ -218,6 +219,7 @@ p{
 .mySlides {
   display: none;
   text-align: left;
+  position: relative;
 }
 
 .active,
