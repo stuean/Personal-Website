@@ -195,10 +195,8 @@ p{
 
 .projectDes{
 	position: relative;
-	margin-top: 10rem;
 	padding: 0;
 	width: 90%;
-	
 }
 
 .close {
@@ -219,6 +217,7 @@ p{
 
 .mySlides {
   display: none;
+  text-align: left;
 }
 
 .active,
