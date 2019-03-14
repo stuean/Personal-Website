@@ -182,7 +182,7 @@ p{
 
 #lightbox {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -198,6 +198,7 @@ p{
 	margin: auto;
 	padding: 0;
 	width: 90%;
+	
 }
 
 .close {
