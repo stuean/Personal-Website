@@ -65,8 +65,8 @@
 			<div class="mySlides">
 				<div class="numbertext">1 / 6</div>
 				<img src="https://stuean.github.io/Personal-Website/olympics.jpg" width="90%" height="auto">
-				<p>Econometrics: Factors contributing to Olympic Medal Totals</p>
-				<p> - A paper using regression analysis to build an economic model that explains the number of Olympic medals that countries have won over time.</p>
+				<p class="projectDes">Econometrics: Factors contributing to Olympic Medal Totals</p>
+				<p class="projectDes"> - A paper using regression analysis to build an economic model that explains the number of Olympic medals that countries have won over time.</p>
 			</div>
 
 			<div class="mySlides">
@@ -121,16 +121,16 @@
 			function showSlide(x){
 				var i;
 				var slides = document.getElementsByClassName("mySlides");
-			//	if (x > slides.length){
-			//		index = 1;
-			//	}
-			//	if (x < 1){
-			//		index = slides.length;
-			//	}
-			//	for (i=0; i<slides.length; i++){
-				//	slides[i].style.display = "none";
+				if (x > slides.length){
+					index = 1;
+				}
+				if (x < 1){
+					index = slides.length;
+				}
+				for (i=0; i<slides.length; i++){
+					slides[i].style.display = "none";
 				
-				//}
+				}
 				slides[index-1].style.display = "inline";
 				
 			
