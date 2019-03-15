@@ -184,6 +184,10 @@ p{
 
 }
 
+.projectDes{
+	z-index: 2;
+}
+
 .lightboxContent {
   position: relative;
   background-color: black;
