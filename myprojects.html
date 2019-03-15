@@ -31,7 +31,7 @@
 		<ul id="projectlist">
 			<li class="pList">
 				<p class="des">Econometrics: Factors Contributing to Olympic Medal Totals</p>
-				<img class="projectContent" src="https://stuean.github.io/Personal-Website/olympics.jpg" height="200" width="auto" onclick="lightbox();currentslide(0,0)" class="hover-shadow">
+				<img class="projectContent" src="https://stuean.github.io/Personal-Website/olympics.jpg" height="200" width="auto" onclick="lightbox();currentslide(0,1)" class="hover-shadow">
 			</li>
 			<li class="pList">
 				<p class="des">Forecasting: Minnesota Housing Prices</p>
@@ -122,6 +122,7 @@
 	
 		<script type="text/javascript">
 	
+			var index = 1;
 	
 			function lightbox(){
 				document.getElementById("lightbox").style.display = "block";
@@ -134,7 +135,7 @@
 	
 	
 			function currentslide(x,y){
-				showSlide(index = x,y);
+				showSlide(x,index = y);
 			}
 	
 	
@@ -157,7 +158,7 @@
 			
 			}
 			
-			function plusSlides(n) {
+			function plusSlides(x,n) {
 				showSlides(x, index += n);
 			}
 	
