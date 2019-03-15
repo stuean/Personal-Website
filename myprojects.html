@@ -126,18 +126,18 @@
 			}
 	
 	
-			function showSlide(x,y){
+			function showSlide(x){
 				var i;
 				var slides = document.getElementsByClassName("mySlides");
-				var page = document.getElementsByClassName("page");
-				if (y > page.length){
+				
+				if (x > slides.length){
 					index = 1;
 				}
-				if (y < 1){
-					index = page.length;
+				if (x < 1){
+					index = slides.length;
 				}
 				for (i=0; i<page.length; i++){
-					page[i].style.display = "none";
+					slides[i].style.display = "none";
 				
 				}
 				slides[index-1].style.display = "block";
