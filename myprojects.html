@@ -31,7 +31,7 @@
 		<ul id="projectlist">
 			<li class="pList">
 				<p class="des">Econometrics: Factors Contributing to Olympic Medal Totals</p>
-				<img class="projectContent" src="https://stuean.github.io/Personal-Website/olympics.jpg" height="200" width="auto" onclick="lightbox();currentslide(0,1)" class="hover-shadow">
+				<img class="projectContent" src="https://stuean.github.io/Personal-Website/olympics.jpg" height="200" width="auto" onclick="lightbox();currentslide(1)" class="hover-shadow">
 			</li>
 			<li class="pList">
 				<p class="des">Forecasting: Minnesota Housing Prices</p>
@@ -64,54 +64,44 @@
 
 				<div class="mySlides">
 			
-					<div class="page">
-						<p class="projectDes">1 / 2</p>
-						<img src="https://stuean.github.io/Personal-Website/olympics.jpg" width="40%" height="auto">
-						<p class="projectDes">Econometrics: Factors contributing to Olympic Medal Totals</p>
-						<p class="projectDes"> - A paper using regression analysis to build an economic model that explains the number of Olympic medals that countries have won over time.</p>
-						<a class="prev" onclick="plusSlides(0,-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(0,1)">&#10095;</a>
-					</div>
-					<div class="page">
-						<p class="projectDes">2 / 2</p>
-						<img src="https://stuean.github.io/Personal-Website/housing.jpg" width="40%" height="auto">
-						<p class="projectDes">Econometrics: Factors contributing to Olympic Medal Totals</p>
-						<p class="projectDes"> - A paper using regression analysis to build an economic model that explains the number of Olympic medals that countries have won over time.</p>
-					</div>
 					
+					<p class="projectDes">1 / 2</p>
+					<img src="https://stuean.github.io/Personal-Website/olympics.jpg" width="50%" height="auto">
+					<p class="projectDes">Econometrics: Factors contributing to Olympic Medal Totals</p>
+					<p class="projectDes"> - A paper using regression analysis to build an economic model that explains the number of Olympic medals that countries have won over time.</p>
 				</div>
 
 				<div class="mySlides">
 					<div class="numbertext">2 / 6</div>
-					<img src="https://stuean.github.io/Personal-Website/housing.jpg" width="40%" height="auto">
+					<img src="https://stuean.github.io/Personal-Website/housing.jpg" width="50%" height="auto">
 					<p class="projectDes">Forecasting: Minnesota Housing Prices</p>
 					<p class="projectDes"> - A paper using an ARIMA method to create future point and interval forecasts for housing prices in Minnesota.</p>
 				</div>
 			
 				<div class="mySlides">
 					<div class="numbertext">3 / 6</div>
-					<img src="https://stuean.github.io/Personal-Website/infosec.jpg" width="40%" height="auto">
+					<img src="https://stuean.github.io/Personal-Website/infosec.jpg" width="50%" height="auto">
 					<p class="projectDes">Information Security: Security Analysis</p>
 					<p class="projectDes"> - An analysis of the security of an everyday system: McCarthy Gym sports equipment rentals.</p>
 				</div>
 			
 				<div class="mySlides">
 					<div class="numbertext">4 / 6</div>
-					<img src="https://stuean.github.io/Personal-Website/venezuela.jpg" width="40%" height="auto">
+					<img src="https://stuean.github.io/Personal-Website/venezuela.jpg" width="50%" height="auto">
 					<p class="projectDes">Macroeconomic Theory: Venezuela Crisis</p>
 					<p class="projectDes"> - A paper explaining the causes of Venezuela's financial crisis, with a focus on hyperinflation.</p>
 				</div>
 			
 				<div class="mySlides">
 					<div class="numbertext">5 / 6</div>
-					<img src="https://stuean.github.io/Personal-Website/mls.jpg" width="40%" height="auto">
+					<img src="https://stuean.github.io/Personal-Website/mls.jpg" width="50%" height="auto">
 					<p class="projectDes">Sports Economics: Collective Bargaining History of MLS</p>
 					<p class="projectDes"> - A paper exploring the organizational history of MLS and its history of collective bargaining agreements between the league and players.</p>
 				</div>
 			
 				<div class="mySlides">
 					<div class="numbertext">6 / 6</div>
-					<img src="https://stuean.github.io/Personal-Website/airline.jpg" width="40%" height="auto">
+					<img src="https://stuean.github.io/Personal-Website/airline.jpg" width="50%" height="auto">
 					<p class="projectDes">Industrial Organization: Airline Industry Analysis</p>
 					<p class="projectDes"> - A paper describing the history and defining characteristics of the airline industry in terms of firm competition.</p>
 				</div>
@@ -122,7 +112,7 @@
 	
 		<script type="text/javascript">
 	
-			var index = 1;
+		//	var index = 1;
 	
 			function lightbox(){
 				document.getElementById("lightbox").style.display = "block";
@@ -134,33 +124,33 @@
 			}
 	
 	
-			function currentslide(x,y){
-				showSlide(x,index = y);
+			function currentslide(x){
+				showSlide(index = x);
 			}
 	
 	
 			function showSlide(x,y){
 				var i;
 				var slides = document.getElementsByClassName("mySlides");
-				var page = document.getElementsByClassName("page");
-				if (y > page.length){
-					index = 1;
-				}
-				if (y < 1){
-					index = page.length;
-				}
-				for (i=0; i<page.length; i++){
-					page[i].style.display = "none";
+			//	var page = document.getElementsByClassName("page");
+			//	if (y > page.length){
+			//		index = 1;
+			//	}
+			//	if (y < 1){
+			//		index = page.length;
+			//	}
+			//	for (i=0; i<page.length; i++){
+			//		page[i].style.display = "none";
 				
-				}
-				page[index-1].style.display = "block";
+			//	}
+				slides[index-1].style.display = "block";
 				
 			
 			}
 			
-			function plusSlides(x,n) {
-				showSlides(x, index += n);
-			}
+		//	function plusSlides(x,n) {
+		//		showSlides(x, index += n);
+		//	}
 	
 	/*
 	
