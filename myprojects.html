@@ -58,7 +58,7 @@
 		
 		
 		
-		<div class="lightbox">
+		<div id="lightbox">
 			<span class="close cursor" onclick="closeLightbox()">&times;</span>
 			<div class="lightboxContent">
 
@@ -103,8 +103,9 @@
 					<p class="projectDes">Industrial Organization: Airline Industry Analysis</p>
 					<p class="projectDes"> - A paper describing the history and defining characteristics of the airline industry in terms of firm competition.</p>
 				</div>
-			</div>
 			
+			</div>
+		</div>
 	
 	
 	
@@ -114,11 +115,11 @@
 	
 	
 			function lightbox(){
-				document.getElementsByClassName("lightbox").style.display = "block";
+				document.getElementById("lightbox").style.display = "block";
 			}
 			
 			function closeLightbox(){
-				document.getElementsByClassName("lightbox").style.display = "none";
+				document.getElementById("lightbox").style.display = "none";
 			
 			}
 	

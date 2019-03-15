@@ -172,7 +172,7 @@ p{
 
 .lightbox {
   display: none;
-  position: relative;
+  position: fixed;
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -182,12 +182,6 @@ p{
   overflow: auto;
   background-color: black;
 
-}
-
-.projectDes{
-	position: absolute;
-	z-index: 2;
-	left: 20px;
 }
 
 .lightboxContent {
