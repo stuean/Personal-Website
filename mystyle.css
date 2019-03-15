@@ -170,7 +170,7 @@ p{
 	margin-top: 2rem;
 }
 
-#lightbox {
+.lightbox {
   display: none;
   position: fixed;
   z-index: 1;
@@ -184,8 +184,15 @@ p{
 
 }
 
+.mySlides{
+	position: relative;
+}
+
 .projectDes{
+	position: absolute;
 	z-index: 2;
+	text-align: center;
+	padding-left: 20px;
 }
 
 .lightboxContent {
