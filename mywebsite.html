@@ -14,7 +14,7 @@
 	
 	<body onload="popList()">
 	
-		<h1 class="header" id="name">Andrew Stuempfig</h1>
+	
 		<div class="header">
 			<a id="resume" href="https://stuean.github.io/Personal-Website/myresume.html">Resume</a>
 			<a id="projects" href="https://stuean.github.io/Personal-Website/myprojects.html">Projects</a>
@@ -39,11 +39,11 @@
 	
 		
 			var popList = function(){
-				console.log("hi");
+				
 				var url = "https://stuean.github.io/Personal-Website/news.json";
 				var p = GetJSON(url);
 				p.then(results => {
-					console.log(results);
+					
 					
 					for(i=0; i<results.length; i++){
 						var newList = document.createElement("LI");

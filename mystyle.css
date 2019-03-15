@@ -73,12 +73,6 @@ body{
 	background-color: rgba(175,70,70,.9);
 }
 
-#name{
-	float: left;
-	color: white;
-	position: relative;
-}
-
 #home{
 	border-left-style: groove;
 	border-left-color: black;
@@ -192,8 +186,7 @@ p{
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
@@ -203,19 +196,8 @@ p{
   display: none;
 }
 
-.active,
-.demo:hover {
+.active,{
   opacity: 1;
-}
-
-
-img.hover-shadow {
-  transition: 0.5s;
-}
-
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
